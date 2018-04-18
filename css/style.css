@@ -1,0 +1,49 @@
+/* Index Page */
+/* Header Nav */
+.nav{
+    position:fixed;
+    background-color: #fff;
+    width:100%;
+    z-index:100;
+    padding:1% 10%;
+}
+.nav .nav_logo{
+    display: inline-block;
+}
+.nav .nav_logo>a>img{
+    width:50px;
+    margin-top:-10px;
+}
+.nav .nav_logo>a>h1{
+    display:inline-block;
+    font-size:2em;
+    margin:0;
+    padding:0;
+    color:black;
+    font-weight:800;
+}
+.nav .nav_logo>a:hover{
+    text-decoration: none;
+}
+.nav .nav_list{
+    display: inline-block;
+    float:right;
+    margin:0;
+    padding:0;
+    font-weight:600;
+}
+.nav .nav_list>li{
+    list-style: none;
+    float:left;
+    font-size:1.5em;
+    margin:0 20px;
+}
+.nav .nav_list>li>a{
+    color:black;
+}
+/* Carousel */
+.container{
+    width:100%;
+    margin:0;
+    padding:0;
+}

@@ -23,12 +23,13 @@
     <body>
         <header>
             <nav class="nav clearfix">
-                <div class="clearfix">
-                    <a href="#">
+                <div class="nav_logo">
+                    <a href="index.html">
                         <img src="img/logo.png" alt="logo">
+                        <h1>종합철거</h1>
                     </a>
                 </div>
-                <ul class="clearfix">
+                <ul class="nav_list">
                     <li>
                         <a href="company.html">회사소개</a>
                     </li>
@@ -45,7 +46,27 @@
             </nav>
         </header>
         <section>
-<!--  slider         -->
+<!--  Carousel       -->
+            <div class="container">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/slide1.png" alt="first_image" style="width:100%;">
+                  </div>
+
+                  <div class="item">
+                    <img src="img/slide2.png" alt="second_image" style="width:100%;">
+                  </div>
+                </div>
+              </div>
+            </div>
 <!--                 -->
             <article class="service">
                 <div class="service_wrap">
@@ -73,10 +94,10 @@
                         <a href="collection.html">
                             <h1>매입 및 수거</h1>
                             <hr>
-                            <div class="service_collection_text">
-                                아직 가치가 남아있거나 집안을 차지하는 골치덩어리 전자제품들을 매입 혹은 수거합니다. 폐업 정리시 나오는 제품들을 정리하여 가격을 책정하여 매입하거나 무료로 수거하여 드립니다.
-                            </div>
                         </a>
+                        <div class="service_collection_text">
+                                아직 가치가 남아있거나 집안을 차지하는 골치덩어리 전자제품들을 매입 혹은 수거합니다. 폐업 정리시 나오는 제품들을 정리하여 가격을 책정하여 매입하거나 무료로 수거하여 드립니다.
+                        </div>
                     </div>
                 </div>
             </article>
@@ -132,5 +153,8 @@
                 </div>
             </div>
         </footer>
+        <!-- Bootstrap -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
     </body>
 </html>
