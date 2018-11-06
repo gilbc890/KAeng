@@ -47,3 +47,125 @@
     margin:0;
     padding:0;
 }
+main{
+    position:relative;
+}
+/* Service */
+.service{
+    position:relative;
+}
+.service>h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 66px;
+    color:#bbb;
+    margin-top:5%;
+}
+.service>hr{
+    width:10%;
+    border : 2px solid #bbb;
+}
+.service .service_wrap{
+    width:80%;
+    margin:auto;
+}
+/* Service Box Image */
+.service .service_wrap .serviceImgBox{
+    overflow: hidden;
+    height:200px;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst{
+    width:100%;
+    height:100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/inside_demolition1.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:all 0.5s ease-in-out;
+    padding-top:20%;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst:hover{
+    background-size:110%;
+}
+
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a>h1{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a:hover{
+    text-decoration: none;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a>h1:hover{
+    color:gray;
+}
+
+.serviceBoxImgSecond{
+    height:200px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/waste3.jpg');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:all 0.5s ease-in-out;
+    padding-top:20%;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond:hover{
+    background-size:110%;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a>h1{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a:hover{
+    text-decoration: none;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a>h1:hover{
+    color:gray;
+}
+
+.serviceBoxImgThird{
+    height:200px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/interior.jpg');
+    background-size:100%; 
+    background-position: center;
+    transition:all 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    padding-top:20%;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird:hover{
+    background-size:110%;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a>h1{
+    display: flex;
+    justify-content: center;
+    color:#fff;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a:hover{
+    text-decoration: none;
+}
+.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a>h1:hover{
+    color:gray;
+}
+
+.service .service_wrap .service_box .serviceImgBox a>hr{
+    border: 2px solid #ffa500;
+    width:20%;
+}
+/* service_box Text */
+.service_demolition_text{
+    padding-top:5%;
+    font-size:18px;
+    font-weight: 700;
+}
+.service_waste_text{
+    padding-top:5%;
+    font-size:18px;
+    font-weight: 700;
+}
+.service_collection_text{
+    padding-top:5%;
+    font-size:18px;
+    font-weight: 700;
+}
