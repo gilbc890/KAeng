@@ -12,6 +12,7 @@ header{
     width:100%;
     z-index:100;
     padding:1% 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nav .nav_logo{
     display: inline-block;
@@ -46,6 +47,9 @@ header{
 }
 .nav .nav_list>li>a{
     color:black;
+}
+.nav .nav_list>li>a:hover{
+    text-decoration: none;
 }
 /* Carousel */
 .container{
