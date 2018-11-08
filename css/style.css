@@ -1,295 +1,344 @@
+/* Media */
 /* Index Page */
-header{
-    position:relative;
-    width:100%;
-    height:auto;
-    float: left;
-}
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  float: left; }
+
 /* Header Nav */
-.nav{
-    position:fixed;
-    background-color: #fff;
-    width:100%;
-    z-index:100;
-    padding:1% 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.nav .nav_logo{
+.nav {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 100;
+  padding: 1% 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .nav .nav_logo {
+    display: inline-block; }
+    .nav .nav_logo a img {
+      width: 50px;
+      margin-top: -10px; }
+      @media (max-width: 575px) {
+        .nav .nav_logo a img {
+          width: 20px;
+          margin-top: 0px; } }
+    .nav .nav_logo a h1 {
+      display: inline-block;
+      font-size: 2em;
+      margin: 0;
+      padding: 0;
+      color: black;
+      font-weight: 800; }
+      @media (max-width: 575px) {
+        .nav .nav_logo a h1 {
+          font-size: 10px;
+          margin: 0;
+          padding: 0;
+          color: black;
+          font-weight: 800; } }
+    .nav .nav_logo a:hover {
+      text-decoration: none; }
+  .nav .nav_list {
     display: inline-block;
-}
-.nav .nav_logo>a>img{
-    width:50px;
-    margin-top:-10px;
-}
-.nav .nav_logo>a>h1{
-    display:inline-block;
-    font-size:2em;
-    margin:0;
-    padding:0;
-    color:black;
-    font-weight:800;
-}
-.nav .nav_logo>a:hover{
-    text-decoration: none;
-}
-.nav .nav_list{
-    display: inline-block;
-    float:right;
-    margin:0;
-    padding:0;
-    font-weight:600;
-}
-.nav .nav_list>li{
-    list-style: none;
-    float:left;
-    font-size:1.5em;
-    margin:0 20px;
-}
-.nav .nav_list>li>a{
-    color:black;
-}
-.nav .nav_list>li>a:hover{
-    text-decoration: none;
-}
-/* Carousel */
-.container{
-    width:100%;
-    margin:0;
-    padding:0;
-}
-main{
-    position:relative;
-}
-/* Service */
-.service{
-    position:relative;
-}
-.service .service_wrap{
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-weight: 600; }
+    .nav .nav_list li {
+      list-style: none;
+      float: left;
+      font-size: 1.5em;
+      margin: 0 20px; }
+      @media (max-width: 575px) {
+        .nav .nav_list li {
+          font-size: 10px;
+          margin: 5px; } }
+    .nav .nav_list a {
+      color: black; }
+      .nav .nav_list a:hover {
+        text-decoration: none; }
+
+main {
+  position: relative;
+  /* Carousel */
+  /* Service */
+  /* Call Center */ }
+  main .container {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  main .service {
+    position: relative; }
+    main .service .service_wrap {
+      position: relative;
+      overflow: hidden;
+      width: 80%;
+      margin: auto;
+      /* Service Box Image */
+      /* Service_Box Text */ }
+      main .service .service_wrap .service_box .serviceImgBox {
+        overflow: hidden;
+        height: 200px; }
+        main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst {
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/inside_demolition1.JPG");
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
+          padding-top: 20%; }
+          @media (min-width: 768px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst {
+              padding-top: 7%; } }
+          @media (min-width: 992px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst {
+              padding-top: 20%; } }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst:hover {
+            background-size: 110%; }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a:hover {
+            text-decoration: none; }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; }
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a h1:hover {
+              text-decoration: none;
+              color: #bbb; }
+        main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond {
+          height: 200px;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/waste3.jpg");
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
+          padding-top: 20%; }
+          @media (min-width: 768px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond {
+              padding-top: 7%; } }
+          @media (min-width: 992px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond {
+              padding-top: 20%; } }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond:hover {
+            background-size: 110%; }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; }
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a h1:hover {
+              color: #bbb; }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a:hover {
+            text-decoration: none; }
+        main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird {
+          height: 200px;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/interior.jpg");
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: all 0.5s ease-in-out;
+          padding-top: 20%; }
+          @media (min-width: 768px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird {
+              padding-top: 7%; } }
+          @media (min-width: 992px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird {
+              padding-top: 20%; } }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird:hover {
+            background-size: 110%; }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; }
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a h1:hover {
+              color: #bbb; }
+          main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a:hover {
+            text-decoration: none; }
+        main .service .service_wrap .service_box .serviceImgBox a hr {
+          border: 2px solid #ffa500;
+          width: 20%; }
+      main .service .service_wrap .service_demolition_text {
+        padding-top: 5%;
+        font-size: 18px;
+        font-weight: 700; }
+        @media (max-width: 575px) {
+          main .service .service_wrap .service_demolition_text {
+            padding-bottom: 10px; } }
+        @media (min-width: 768px) {
+          main .service .service_wrap .service_demolition_text {
+            padding: 1%; } }
+      main .service .service_wrap .service_waste_text {
+        padding-top: 5%;
+        font-size: 18px;
+        font-weight: 700; }
+        @media (max-width: 575px) {
+          main .service .service_wrap .service_waste_text {
+            padding-bottom: 10px; } }
+        @media (min-width: 768px) {
+          main .service .service_wrap .service_waste_text {
+            padding: 1%; } }
+      main .service .service_wrap .service_collection_text {
+        padding-top: 5%;
+        font-size: 18px;
+        font-weight: 700; }
+        @media (min-width: 768px) {
+          main .service .service_wrap .service_collection_text {
+            padding: 1%; } }
+    main .service .service_title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+      color: #bbb;
+      margin-top: 5%; }
+      @media (max-width: 575px) {
+        main .service .service_title {
+          font-size: 50px; } }
+    main .service hr {
+      width: 10%;
+      border: 2px solid #bbb; }
+  main .call_center {
     position: relative;
-    overflow: hidden;
-}
-.service>h1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    color:#bbb;
-    margin-top:5%;
-}
-.service>hr{
-    width:10%;
-    border : 2px solid #bbb;
-}
-.service .service_wrap{
-    width:80%;
-    margin:auto;
-}
-/* Service Box Image */
-.service .service_wrap .serviceImgBox{
-    overflow: hidden;
-    height:200px;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst{
-    width:100%;
-    height:100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/inside_demolition1.JPG');
-    background-size:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition:all 0.5s ease-in-out;
-    padding-top:20%;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst:hover{
-    background-size:110%;
-}
-
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a>h1{
-    display: flex;
-    justify-content: center;
-    color:#fff;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a:hover{
-    text-decoration: none;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst a>h1:hover{
-    color:gray;
-}
-
-.serviceBoxImgSecond{
-    height:200px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/waste3.jpg');
-    background-size:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition:all 0.5s ease-in-out;
-    padding-top:20%;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond:hover{
-    background-size:110%;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a>h1{
-    display: flex;
-    justify-content: center;
-    color:#fff;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a:hover{
-    text-decoration: none;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond a>h1:hover{
-    color:gray;
-}
-
-.serviceBoxImgThird{
-    height:200px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/interior.jpg');
-    background-size:100%; 
-    background-position: center;
-    transition:all 0.5s ease-in-out;
-    background-repeat: no-repeat;
-    padding-top:20%;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird:hover{
-    background-size:110%;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a>h1{
-    display: flex;
-    justify-content: center;
-    color:#fff;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a:hover{
-    text-decoration: none;
-}
-.service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird a>h1:hover{
-    color:gray;
-}
-
-.service .service_wrap .service_box .serviceImgBox a>hr{
-    border: 2px solid #ffa500;
-    width:20%;
-}
-/* service_box Text */
-.service_demolition_text{
-    padding-top:5%;
-    font-size:18px;
-    font-weight: 700;
-}
-.service_waste_text{
-    padding-top:5%;
-    font-size:18px;
-    font-weight: 700;
-}
-.service_collection_text{
-    padding-top:5%;
-    font-size:18px;
-    font-weight: 700;
-}
-/* Call Center */
-.call_center{
-    position: relative;
-    margin-top:10%;
-}
-.call_center .call_wrap{
-    height:500px;
-    overflow: hidden;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/construction.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-}
-.call_center .call_wrap .call_text{
-    color:#fff;
-    padding:5% 5% 5% 10%;
-}
-.call_center .call_wrap .call_text>h1{
-    font-size:60px;
-    font-weight: 800;
-    padding-bottom:5%;
-}
-.call_center .call_wrap .call_text>p{
-    font-size:20px;
-    font-weight: 700;
-}
-.call_center .call_wrap .call_text>h2:nth-last-child(2){
-    padding-top:5%;
-}
-
-
-.call_center .call_wrap .customer_center{
-    height:500px;
-    padding:5%;
-    background-color: #fff;
-}
-.call_center .call_wrap .customer_center_title{
-    position: relative;
-    font-size: 24px;
-    margin:auto;
-    text-align: center;
-}
-.call_center .call_wrap .customer_center_title>p{
-    color:gray;
-}
-.call_center .call_wrap .customer_center_title>h2{
-    margin-top:0;
-    font-weight: 800;
-}
-
-.call_center .call_wrap .customer_center .call_logo{
-    position: relative;
-    padding-top:10%;
-    padding-bottom: 10%;
-}
-.call_center .call_wrap .customer_center .call_logo .call_image{
-    padding:10%;
-}
-.call_center .call_wrap .customer_center .call_logo .number{
-    font-size:36px;
-    font-weight: 800;
-    padding-left:55px;
-}
-
-.call_center .call_wrap .customer_center .call_tail{
-    position: relative;
-    text-align: center;
-    font-weight: 700;
-}
-
+    margin-top: 10%; }
+    main .call_center .call_wrap {
+      height: 500px;
+      overflow: hidden;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/construction.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
+      @media (max-width: 575px) {
+        main .call_center .call_wrap {
+          height: auto;
+          background-position: center; } }
+      @media (min-width: 768px) {
+        main .call_center .call_wrap {
+          height: auto; } }
+      @media (min-width: 992px) {
+        main .call_center .call_wrap {
+          height: auto; } }
+      main .call_center .call_wrap .call_text {
+        color: #fff;
+        padding: 5% 5% 5% 10%; }
+        main .call_center .call_wrap .call_text h1 {
+          font-size: 60px;
+          font-weight: 800;
+          padding-bottom: 5%; }
+          @media (max-width: 575px) {
+            main .call_center .call_wrap .call_text h1 {
+              font-size: 30px; } }
+        main .call_center .call_wrap .call_text p {
+          font-size: 20px;
+          font-weight: 700; }
+          @media (max-width: 575px) {
+            main .call_center .call_wrap .call_text p {
+              font-size: 15px; } }
+        main .call_center .call_wrap .call_text h2:nth-last-child(2) {
+          padding-top: 5%; }
+          @media (max-width: 575px) {
+            main .call_center .call_wrap .call_text h2:nth-last-child(2) {
+              font-size: 20px; } }
+      main .call_center .call_wrap .customer_center {
+        height: 500px;
+        padding: 5%;
+        background-color: #fff; }
+        @media (max-width: 575px) {
+          main .call_center .call_wrap .customer_center {
+            height: auto; } }
+        main .call_center .call_wrap .customer_center .customer_center_title {
+          position: relative;
+          font-size: 24px;
+          margin: auto;
+          text-align: center; }
+          main .call_center .call_wrap .customer_center .customer_center_title p {
+            color: #bbb; }
+          main .call_center .call_wrap .customer_center .customer_center_title h2 {
+            margin-top: 0;
+            font-weight: 800; }
+        main .call_center .call_wrap .customer_center .call_logo {
+          position: relative;
+          padding-top: 10%;
+          padding-bottom: 10%; }
+          @media (max-width: 575px) {
+            main .call_center .call_wrap .customer_center .call_logo {
+              padding: 0; } }
+          @media (min-width: 768px) {
+            main .call_center .call_wrap .customer_center .call_logo {
+              padding: 0 5%; } }
+          @media (min-width: 992px) {
+            main .call_center .call_wrap .customer_center .call_logo {
+              padding: 0 5%; } }
+          main .call_center .call_wrap .customer_center .call_logo .call_image {
+            padding: 10%; }
+            @media (max-width: 575px) {
+              main .call_center .call_wrap .customer_center .call_logo .call_image {
+                display: inline-block;
+                width: 50%; } }
+            @media (min-width: 768px) {
+              main .call_center .call_wrap .customer_center .call_logo .call_image {
+                display: inline-block;
+                width: 50%;
+                padding-left: 20%; } }
+            @media (min-width: 992px) {
+              main .call_center .call_wrap .customer_center .call_logo .call_image {
+                display: inline-block;
+                padding-left: 0; } }
+            @media (max-width: 575px) {
+              main .call_center .call_wrap .customer_center .call_logo .call_image img {
+                margin-top: -130px; } }
+            @media (min-width: 768px) {
+              main .call_center .call_wrap .customer_center .call_logo .call_image img {
+                margin-top: -130px; } }
+            @media (min-width: 992px) {
+              main .call_center .call_wrap .customer_center .call_logo .call_image img {
+                margin-top: 0; } }
+          main .call_center .call_wrap .customer_center .call_logo .number {
+            font-size: 36px;
+            font-weight: 800;
+            padding-left: 55px; }
+            @media (max-width: 575px) {
+              main .call_center .call_wrap .customer_center .call_logo .number {
+                display: inline-block;
+                padding-left: 50px; } }
+            @media (min-width: 768px) {
+              main .call_center .call_wrap .customer_center .call_logo .number {
+                display: inline-block; } }
+            @media (min-width: 992px) {
+              main .call_center .call_wrap .customer_center .call_logo .number {
+                display: inline-block;
+                padding-top: 0%; } }
+        main .call_center .call_wrap .customer_center .call_tail {
+          position: relative;
+          text-align: center;
+          font-weight: 700; }
 
 /* Footer */
-footer .footer_wrap{
-    background-color: #333;
-    padding:2% 5%;
-    overflow: hidden;
-}
-footer .footer_logo{
+.footer_wrap {
+  background-color: #333;
+  padding: 2% 5%;
+  overflow: hidden; }
+  .footer_wrap .footer_logo {
     position: relative;
     display: inline-block;
-    color:#aaa;
-    font-size:14px;
-    margin-top:2%;
-}
-footer .footer_logo>img{
-    margin-top:-5%;
-}
-footer .footer_logo>h1{
-    display: inline-block;
-    font-size:24px;
-}
-
-footer .footer_text{
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 2%; }
+    @media (max-width: 575px) {
+      .footer_wrap .footer_logo p {
+        padding-top: 10px; } }
+    .footer_wrap .footer_logo img {
+      margin-top: -5%; }
+    .footer_wrap .footer_logo h1 {
+      display: inline-block;
+      font-size: 24px; }
+  .footer_wrap .footer_text {
     position: relative;
     display: inline-block;
-    color:#aaa;
-    font-size:14px;
-}
-footer .footer_text>p{
-    margin:0;
-    padding:0;
-}
-
-
-
-
-
-
-
+    color: #aaa;
+    font-size: 14px; }
+    .footer_wrap .footer_text p {
+      margin: 0;
+      padding: 0; }
