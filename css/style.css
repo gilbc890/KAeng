@@ -92,7 +92,7 @@ main{
 .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst{
     width:100%;
     height:100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/inside_demolition1.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('../img/inside_demolition1.JPG');
     background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
