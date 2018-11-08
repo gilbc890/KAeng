@@ -52,8 +52,15 @@ header {
       margin: 0 20px; }
       @media (max-width: 575px) {
         .nav .nav_list li {
-          font-size: 10px;
+          font-size: 12px;
           margin: 5px; } }
+      @media (min-width: 576px) {
+        .nav .nav_list li {
+          font-size: 18px;
+          margin: 5px; } }
+      @media (min-width: 992px) {
+        .nav .nav_list li {
+          margin: 0 20px; } }
     .nav .nav_list a {
       color: black; }
       .nav .nav_list a:hover {
@@ -89,9 +96,12 @@ main {
           background-repeat: no-repeat;
           transition: all 0.5s ease-in-out;
           padding-top: 20%; }
-          @media (min-width: 768px) {
+          @media (max-width: 575px) {
             main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst {
-              padding-top: 7%; } }
+              padding-top: 15%; } }
+          @media (min-width: 576px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst {
+              padding-top: 10%; } }
           @media (min-width: 992px) {
             main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgFirst {
               padding-top: 20%; } }
@@ -115,9 +125,12 @@ main {
           background-repeat: no-repeat;
           transition: all 0.5s ease-in-out;
           padding-top: 20%; }
-          @media (min-width: 768px) {
+          @media (max-width: 575px) {
             main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond {
-              padding-top: 7%; } }
+              padding-top: 15%; } }
+          @media (min-width: 576px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond {
+              padding-top: 10%; } }
           @media (min-width: 992px) {
             main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgSecond {
               padding-top: 20%; } }
@@ -140,9 +153,12 @@ main {
           background-repeat: no-repeat;
           transition: all 0.5s ease-in-out;
           padding-top: 20%; }
-          @media (min-width: 768px) {
+          @media (max-width: 575px) {
             main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird {
-              padding-top: 7%; } }
+              padding-top: 15%; } }
+          @media (min-width: 576px) {
+            main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird {
+              padding-top: 10%; } }
           @media (min-width: 992px) {
             main .service .service_wrap .service_box .serviceImgBox .serviceBoxImgThird {
               padding-top: 20%; } }
@@ -167,7 +183,7 @@ main {
         @media (max-width: 575px) {
           main .service .service_wrap .service_demolition_text {
             padding-bottom: 10px; } }
-        @media (min-width: 768px) {
+        @media (min-width: 576px) {
           main .service .service_wrap .service_demolition_text {
             padding: 1%; } }
       main .service .service_wrap .service_waste_text {
@@ -177,14 +193,14 @@ main {
         @media (max-width: 575px) {
           main .service .service_wrap .service_waste_text {
             padding-bottom: 10px; } }
-        @media (min-width: 768px) {
+        @media (min-width: 576px) {
           main .service .service_wrap .service_waste_text {
             padding: 1%; } }
       main .service .service_wrap .service_collection_text {
         padding-top: 5%;
         font-size: 18px;
         font-weight: 700; }
-        @media (min-width: 768px) {
+        @media (min-width: 576px) {
           main .service .service_wrap .service_collection_text {
             padding: 1%; } }
     main .service .service_title {
@@ -214,7 +230,7 @@ main {
         main .call_center .call_wrap {
           height: auto;
           background-position: center; } }
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
         main .call_center .call_wrap {
           height: auto; } }
       @media (min-width: 992px) {
@@ -265,7 +281,7 @@ main {
           @media (max-width: 575px) {
             main .call_center .call_wrap .customer_center .call_logo {
               padding: 0; } }
-          @media (min-width: 768px) {
+          @media (min-width: 576px) {
             main .call_center .call_wrap .customer_center .call_logo {
               padding: 0 5%; } }
           @media (min-width: 992px) {
@@ -277,7 +293,7 @@ main {
               main .call_center .call_wrap .customer_center .call_logo .call_image {
                 display: inline-block;
                 width: 50%; } }
-            @media (min-width: 768px) {
+            @media (min-width: 576px) {
               main .call_center .call_wrap .customer_center .call_logo .call_image {
                 display: inline-block;
                 width: 50%;
@@ -289,7 +305,7 @@ main {
             @media (max-width: 575px) {
               main .call_center .call_wrap .customer_center .call_logo .call_image img {
                 margin-top: -130px; } }
-            @media (min-width: 768px) {
+            @media (min-width: 576px) {
               main .call_center .call_wrap .customer_center .call_logo .call_image img {
                 margin-top: -130px; } }
             @media (min-width: 992px) {
@@ -303,7 +319,7 @@ main {
               main .call_center .call_wrap .customer_center .call_logo .number {
                 display: inline-block;
                 padding-left: 50px; } }
-            @media (min-width: 768px) {
+            @media (min-width: 576px) {
               main .call_center .call_wrap .customer_center .call_logo .number {
                 display: inline-block; } }
             @media (min-width: 992px) {

@@ -99,8 +99,15 @@ header{
             font-size:1.5em;
             margin:0 20px;
             @include media("(max-width:575px)"){
-                font-size:10px;
+                font-size:12px;
                 margin:5px;
+            }
+            @include media("(min-width:576px)"){
+                font-size:18px;
+                margin:5px;
+            }
+            @include media("(min-width:992px)"){
+                margin:0 20px;
             }
         }
         a{
@@ -133,8 +140,11 @@ main{
                     @include hidden;
                     height:200px;
                     .serviceBoxImgFirst{
-                        @include media("(min-width:768px)"){
-                            padding-top:7%;
+                        @include media("(max-width:575px)"){
+                            padding-top:15%;
+                        }
+                        @include media("(min-width:576px)"){
+                            padding-top:10%;
                         }
                         @include media("(min-width:992px)"){
                             padding-top:20%;
@@ -161,8 +171,11 @@ main{
                         }
                     }
                     .serviceBoxImgSecond{
-                        @include media("(min-width:768px)"){
-                            padding-top:7%;
+                        @include media("(max-width:575px)"){
+                            padding-top:15%;
+                        }
+                        @include media("(min-width:576px)"){
+                            padding-top:10%;
                         }
                         @include media("(min-width:992px)"){
                             padding-top:20%;
@@ -187,8 +200,11 @@ main{
                         }
                     }
                     .serviceBoxImgThird{
-                        @include media("(min-width:768px)"){
-                            padding-top:7%;
+                        @include media("(max-width:575px)"){
+                            padding-top:15%;
+                        }
+                        @include media("(min-width:576px)"){
+                            padding-top:10%;
                         }
                         @include media("(min-width:992px)"){
                             padding-top:20%;
@@ -228,7 +244,7 @@ main{
                 @include media("(max-width:575px)"){
                     padding-bottom: 10px;
                 }
-                @include media("(min-width:768px)"){
+                @include media("(min-width:576px)"){
                     padding:1%;
                 }
             }
@@ -237,13 +253,13 @@ main{
                 @include media("(max-width:575px)"){
                     padding-bottom: 10px;
                 }
-                @include media("(min-width:768px)"){
+                @include media("(min-width:576px)"){
                     padding:1%;
                 }
             }
             .service_collection_text{
                 @include service_text;
-                @include media("(min-width:768px)"){
+                @include media("(min-width:576px)"){
                     padding:1%;
                 }
             }    
@@ -277,7 +293,7 @@ main{
                 height:auto;
                 background-position:center;
             }
-            @include media("(min-width:768px)"){
+            @include media("(min-width:576px)"){
                 height:auto;
             }
             @include media("(min-width:992px)"){
@@ -335,7 +351,7 @@ main{
                     @include media("(max-width:575px)"){
                         padding:0;
                     }
-                    @include media("(min-width:768px)"){
+                    @include media("(min-width:576px)"){
                         padding:0 5%;
                     }
                     @include media("(min-width:992px)"){
@@ -347,7 +363,7 @@ main{
                             display: inline-block;
                             width:50%;
                         }
-                        @include media("(min-width:768px)"){
+                        @include media("(min-width:576px)"){
                             display: inline-block;
                             width:50%;
                             padding-left:20%;
@@ -360,7 +376,7 @@ main{
                             @include media("(max-width:575px)"){
                                 margin-top:-130px;
                             }
-                            @include media("(min-width:768px)"){
+                            @include media("(min-width:576px)"){
                                 margin-top:-130px;
                             }
                             @include media("(min-width:992px)"){
@@ -376,7 +392,7 @@ main{
                             display: inline-block;
                             padding-left:50px;
                         }
-                        @include media("(min-width:768px)"){
+                        @include media("(min-width:576px)"){
                             display:inline-block;
                         }
                         @include media("(min-width:992px)"){
