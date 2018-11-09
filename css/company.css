@@ -1,0 +1,30 @@
+/* Media */
+/* Aside */
+main {
+  padding-top: 5%; }
+  main aside .wrap {
+    padding: 15px 5% 0 5%; }
+    main aside .wrap .dot {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #0068b7; }
+    main aside .wrap .intro {
+      display: inline-block;
+      padding: 5%; }
+  main aside hr {
+    width: 80%;
+    border: 2px solid #eee; }
+  main aside .phone {
+    padding-top: 5%; }
+    main aside .phone p {
+      text-align: center;
+      font-size: 20px; }
+  main section .greeting {
+    padding: 20px 5% 1px 0; }
+  main section hr {
+    border: 2px solid #eee; }
+  main section .img {
+    height: 200px;
+    background-image: url(../img/company_img.jpg);
+    background-repeat: no-repeat; }

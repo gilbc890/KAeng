@@ -1,0 +1,98 @@
+@mixin gap{
+    margin:0;
+    padding:0;
+}
+@mixin width{
+    width:100%;
+}
+@mixin line{
+    text-decoration: none;
+}
+/* Media */
+@mixin media($queryString){
+    @media #{$queryString}{
+        @content;
+    }
+}
+
+/* Header Nav */
+.nav {
+    position:fixed;
+    background-color: #fff;
+    @include width;
+    z-index:100;
+    padding:1% 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .nav_logo{
+        display: inline-block;
+        a {    
+            img{
+                width:50px;
+                margin-top:-10px;
+                @include media("(max-width:575px)"){
+                    width:20px;
+                    margin-top:0px;
+                }
+            }
+            h1{
+                display:inline-block;
+                font-size:2em;
+                @include gap;
+                color:black;
+                font-weight:800;
+                @include media("(max-width:575px)"){
+                    font-size:10px;
+                    @include gap;
+                    color:black;
+                    font-weight:800;
+                } 
+            }
+            &:hover{
+                @include line;
+            }
+        }
+    }
+    #nav_icon{
+        float:right;
+        cursor:pointer;
+        display: none;
+        @include media("(max-width:575px)"){
+            display:inline-block;
+        }
+    }
+    .nav_list{
+        display: inline-block;
+        float:right;
+        @include gap;
+        font-weight:600;
+        @include media("(max-width:575px)"){
+            @include width;
+            display: none;
+        }
+        li{
+            list-style: none;
+            float:left;
+            font-size:1.5em;
+            margin:0 20px;
+            @include media("(max-width:575px)"){
+                @include width;
+                font-size:12px;
+                margin:5px;
+                text-align: center;
+            }
+            @include media("(min-width:576px)"){
+                font-size:18px;
+                margin:5px;
+            }
+            @include media("(min-width:992px)"){
+                margin:0 20px;
+            }
+        }
+        a{
+            color:black;
+            &:hover{
+                @include line;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@mixin position {
+    position:relative;
+}
+@mixin gap{
+    margin:0;
+    padding:0;
+}
+@mixin hidden{
+    overflow: hidden;
+}
+
+/* Media */
+@mixin media($queryString){
+    @media #{$queryString}{
+        @content;
+    }
+}
+/* Footer */
+.footer_wrap{
+    background-color: #333;
+    padding:2% 5%;
+    @include hidden;
+    .footer_logo{
+        @include position;
+        display: inline-block;
+        color:#aaa;
+        font-size:14px;
+        margin-top:2%;
+        p{
+            @include media("(max-width:575px)"){
+                padding-top:10px;
+            }
+        }
+        img{
+            margin-top:-5%;
+        }
+        h1{
+            display: inline-block;
+            font-size:24px;
+        }
+    }
+    .footer_text{
+        @include position;
+        display: inline-block;
+        color:#aaa;
+        font-size:14px;
+        p{
+            @include gap;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+$main_color : #0068b7;
+@mixin position {
+    position:relative;
+}
+@mixin display{
+    display: inline-block;
+}
+@mixin gap{
+    margin:0;
+    padding:0;
+}
+@mixin center{
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+@mixin width{
+    width:100%;
+}
+@mixin hidden{
+    overflow: hidden;
+}
+@mixin line{
+    text-decoration: none;
+}
+/* Media */
+@mixin media($queryString){
+    @media #{$queryString}{
+        @content;
+    }
+}
+
+/* Aside */
+main{
+    padding-top:5%;
+    aside{
+        .wrap{
+            padding:15px 5% 0 5%;
+            .dot{
+                @include display;
+                width:20px;
+                height:20px;
+                background-color:$main_color;
+            }
+            .intro{
+                @include display;
+                padding:5%;
+            }
+        }
+        hr{
+            width:80%;
+            border: 2px solid #eee;
+        }
+        .phone{
+            padding-top:5%;
+            p{
+                text-align: center;
+                font-size:20px;
+            }
+        }
+    }
+    section{
+        .greeting{
+            padding:20px 5% 1px 0;
+            .map{
+                
+            }
+        }
+        hr{ 
+            border:2px solid #eee;
+        }
+        .img{
+            height:200px;
+            background-image: url(../img/company_img.jpg);
+            background-repeat:no-repeat;
+        }
+    }
+}
