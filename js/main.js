@@ -6,5 +6,12 @@ menu.addEventListener('click', () => {
   nav.style.display = "block";
 } else {
   nav.style.display = "none";
-}
+    }
 })
+function resize(){
+if(window.innerWidth >= 576) {
+    nav.style.display="block";
+}  else{
+    nav.style.display="none"
+}  
+}
