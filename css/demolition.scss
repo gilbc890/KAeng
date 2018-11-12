@@ -29,8 +29,7 @@ $main_color : #0068b7;
         @content;
     }
 }
-
-/* Aside */
+/* Main */
 main{
     padding:5%;
     overflow: hidden;
@@ -82,26 +81,29 @@ main{
         hr{ 
             border:2px solid #eee;
         }
+        .process{
         .img{
-            height:200px;
-            background-image: url(../img/company_img.jpg);
-            background-repeat:no-repeat;
-            background-position:center;
-        }
-        .main_text{
-            h2{
-                padding:5% 0;
-                @include media("(max-width:575px)"){
-                    font-size:20px;
-                }
+            overflow: hidden;
+            padding:0;
+            .beforeImg{
+                padding-left:0;
+                img{width:100%;}
             }
+            .afterImg{
+                padding-right:0;
+                img{width:100%;}
+            }
+            margin-bottom: 5%;
+        }
+        .explain{
             p{
-                font-size:20px;
+                font-size:18px;
                 font-weight:700;
                 @include media("(max-width:575px)"){
                     font-size:14px;
                 }
             }
+        }
         }
         .bye{
             text-align: right;
@@ -113,5 +115,5 @@ main{
                 @include display;
             }
         }
-    }
+    }    
 }

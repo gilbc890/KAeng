@@ -1,5 +1,5 @@
 /* Media */
-/* Aside */
+/* Main */
 main {
   padding: 5%;
   overflow: hidden;
@@ -37,21 +37,23 @@ main {
     padding: 20px 5% 1px 0; }
   main section hr {
     border: 2px solid #eee; }
-  main section .img {
-    height: 200px;
-    background-image: url(../img/company_img.jpg);
-    background-repeat: no-repeat;
-    background-position: center; }
-  main section .main_text h2 {
-    padding: 5% 0; }
-    @media (max-width: 575px) {
-      main section .main_text h2 {
-        font-size: 20px; } }
-  main section .main_text p {
-    font-size: 20px;
+  main section .process .img {
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 5%; }
+    main section .process .img .beforeImg {
+      padding-left: 0; }
+      main section .process .img .beforeImg img {
+        width: 100%; }
+    main section .process .img .afterImg {
+      padding-right: 0; }
+      main section .process .img .afterImg img {
+        width: 100%; }
+  main section .process .explain p {
+    font-size: 18px;
     font-weight: 700; }
     @media (max-width: 575px) {
-      main section .main_text p {
+      main section .process .explain p {
         font-size: 14px; } }
   main section .bye {
     text-align: right;
