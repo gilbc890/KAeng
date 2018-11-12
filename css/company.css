@@ -12,6 +12,9 @@ main {
     main aside .wrap .intro {
       display: inline-block;
       padding: 5%; }
+      @media (min-width: 576px) {
+        main aside .wrap .intro {
+          padding: 0%; } }
   main aside hr {
     width: 80%;
     border: 2px solid #eee; }
@@ -20,6 +23,15 @@ main {
     main aside .phone p {
       text-align: center;
       font-size: 20px; }
+    @media (min-width: 576px) {
+      main aside .phone {
+        padding: 0; } }
+    @media (max-width: 575px) {
+      main aside .phone {
+        padding: 0%; } }
+  @media (min-width: 576px) {
+    main section {
+      padding: 0; } }
   main section .greeting {
     padding: 20px 5% 1px 0; }
   main section hr {
@@ -27,4 +39,23 @@ main {
   main section .img {
     height: 200px;
     background-image: url(../img/company_img.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: center; }
+  main section .main_text h2 {
+    padding: 5% 0; }
+    @media (max-width: 575px) {
+      main section .main_text h2 {
+        font-size: 20px; } }
+  main section .main_text p {
+    font-size: 20px;
+    font-weight: 700; }
+    @media (max-width: 575px) {
+      main section .main_text p {
+        font-size: 14px; } }
+  main section .bye {
+    text-align: right;
+    padding: 5%; }
+    main section .bye img {
+      display: inline-block; }
+    main section .bye p {
+      display: inline-block; }

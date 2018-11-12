@@ -45,6 +45,9 @@ main{
             .intro{
                 @include display;
                 padding:5%;
+                @include media("(min-width:576px)"){
+                padding:0%;
+                }
             }
         }
         hr{
@@ -57,9 +60,18 @@ main{
                 text-align: center;
                 font-size:20px;
             }
+            @include media("(min-width:576px)"){
+            padding:0;
+            }
+            @include media("(max-width:575px)"){
+            padding:0%;
+            }
         }
     }
     section{
+        @include media("(min-width:576px)"){
+            padding:0;
+        }
         .greeting{
             padding:20px 5% 1px 0;
             .map{
@@ -73,6 +85,32 @@ main{
             height:200px;
             background-image: url(../img/company_img.jpg);
             background-repeat:no-repeat;
+            background-position:center;
+        }
+        .main_text{
+            h2{
+                padding:5% 0;
+                @include media("(max-width:575px)"){
+                    font-size:20px;
+                }
+            }
+            p{
+                font-size:20px;
+                font-weight:700;
+                @include media("(max-width:575px)"){
+                    font-size:14px;
+                }
+            }
+        }
+        .bye{
+            text-align: right;
+            padding:5%;
+            img{
+                @include display;
+            }
+            p{
+                @include display;
+            }
         }
     }
 }
