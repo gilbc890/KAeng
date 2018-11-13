@@ -23,6 +23,16 @@ $main_color : #0068b7;
 @mixin line{
     text-decoration: none;
 }
+@mixin circle{
+    width:110px;
+    height:110px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5;
+    list-style: none;
+    margin:1%;
+    font-weight:700;
+}
 /* Media */
 @mixin media($queryString){
     @media #{$queryString}{
@@ -36,11 +46,13 @@ main{
     aside{
         .wrap{
             padding:35px 5% 0 5%;
+            text-align: center;
             .dot{
                 @include display;
                 width:15px;
                 height:15px;
                 background-color:$main_color;
+                margin-right:5%;
             }
             .intro{
                 @include display;
@@ -73,7 +85,7 @@ main{
             padding:0;
         }
         .greeting{
-            padding:20px 5% 1px 0;
+            padding:25px 5% 1px 0;
             .map{
                 
             }
@@ -81,16 +93,16 @@ main{
         hr{ 
             border:2px solid #eee;
         }
-        .process{
+        .before_after{
         .img{
             overflow: hidden;
             padding:0;
             .beforeImg{
-                padding-left:0;
+                padding:1%;
                 img{width:100%;}
             }
             .afterImg{
-                padding-right:0;
+                padding:1%;
                 img{width:100%;}
             }
             margin-bottom: 5%;
@@ -105,14 +117,79 @@ main{
             }
         }
         }
-        .bye{
-            text-align: right;
-            padding:5%;
-            img{
-                @include display;
+        .process{
+            padding:0;
+            h2{
+                margin-left:-15px;
+                padding-bottom: 5%;
+            }
+            .graphic{
+                padding:0;
+                .phone{
+                    @include circle;
+                    border:20px solid #7ecef4;
+                    @include display;
+                    @include media("(max-width:575px)"){
+                        width:150px;
+                        height:150px;
+                        font-size:22px;
+                        margin:5% auto;
+                        display: block;
+                    }
+                }
+                .inperson{
+                    @include circle;
+                    border:20px solid #448aca;
+                    @include display;
+                    @include media("(max-width:575px)"){
+                        width:150px;
+                        height:150px;
+                        font-size:22px;
+                        margin:5% auto;
+                        display: block;
+                    }
+                }
+                .negotiation{
+                    @include circle;
+                    border:20px solid #0068b7;
+                    @include display;  
+                    @include media("(max-width:575px)"){
+                        width:150px;
+                        height:150px;
+                        font-size:22px;
+                        margin:5% auto;
+                        display: block;
+                    }
+                }
+                .demolition{
+                    @include circle;       border:20px solid #004986;
+                    @include display; 
+                    @include media("(max-width:575px)"){
+                        width:150px;
+                        height:150px;
+                        font-size:22px;
+                        margin:5% auto;
+                        display: block;
+                    }
+                }
+                .complete{
+                    @include circle;
+                    border:20px solid #002e73;
+                    @include display; 
+                    @include media("(max-width:575px)"){
+                        width:150px;
+                        height:150px;
+                        font-size:22px;
+                        margin:auto;
+                        display: block;
+                    }
+                } 
             }
             p{
-                @include display;
+                margin-left:-15px;
+                padding-top:5%;
+                font-weight:700;
+                font-size:18px;
             }
         }
     }    

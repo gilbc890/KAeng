@@ -5,12 +5,14 @@ main {
   overflow: hidden;
   /* Section */ }
   main aside .wrap {
-    padding: 35px 5% 0 5%; }
+    padding: 35px 5% 0 5%;
+    text-align: center; }
     main aside .wrap .dot {
       display: inline-block;
       width: 15px;
       height: 15px;
-      background-color: #0068b7; }
+      background-color: #0068b7;
+      margin-right: 5%; }
     main aside .wrap .intro {
       display: inline-block;
       padding: 5%; }
@@ -34,31 +36,126 @@ main {
     main section {
       padding: 0; } }
   main section .greeting {
-    padding: 20px 5% 1px 0; }
+    padding: 25px 5% 1px 0; }
   main section hr {
     border: 2px solid #eee; }
-  main section .process .img {
+  main section .before_after .img {
     overflow: hidden;
     padding: 0;
     margin-bottom: 5%; }
-    main section .process .img .beforeImg {
-      padding-left: 0; }
-      main section .process .img .beforeImg img {
+    main section .before_after .img .beforeImg {
+      padding: 1%; }
+      main section .before_after .img .beforeImg img {
         width: 100%; }
-    main section .process .img .afterImg {
-      padding-right: 0; }
-      main section .process .img .afterImg img {
+    main section .before_after .img .afterImg {
+      padding: 1%; }
+      main section .before_after .img .afterImg img {
         width: 100%; }
-  main section .process .explain p {
+  main section .before_after .explain p {
     font-size: 18px;
     font-weight: 700; }
     @media (max-width: 575px) {
-      main section .process .explain p {
+      main section .before_after .explain p {
         font-size: 14px; } }
-  main section .bye {
-    text-align: right;
-    padding: 5%; }
-    main section .bye img {
-      display: inline-block; }
-    main section .bye p {
-      display: inline-block; }
+  main section .process {
+    padding: 0; }
+    main section .process h2 {
+      margin-left: -15px;
+      padding-bottom: 5%; }
+    main section .process .graphic {
+      padding: 0; }
+      main section .process .graphic .phone {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 5;
+        list-style: none;
+        margin: 1%;
+        font-weight: 700;
+        border: 20px solid #7ecef4;
+        display: inline-block; }
+        @media (max-width: 575px) {
+          main section .process .graphic .phone {
+            width: 150px;
+            height: 150px;
+            font-size: 22px;
+            margin: 5% auto;
+            display: block; } }
+      main section .process .graphic .inperson {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 5;
+        list-style: none;
+        margin: 1%;
+        font-weight: 700;
+        border: 20px solid #448aca;
+        display: inline-block; }
+        @media (max-width: 575px) {
+          main section .process .graphic .inperson {
+            width: 150px;
+            height: 150px;
+            font-size: 22px;
+            margin: 5% auto;
+            display: block; } }
+      main section .process .graphic .negotiation {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 5;
+        list-style: none;
+        margin: 1%;
+        font-weight: 700;
+        border: 20px solid #0068b7;
+        display: inline-block; }
+        @media (max-width: 575px) {
+          main section .process .graphic .negotiation {
+            width: 150px;
+            height: 150px;
+            font-size: 22px;
+            margin: 5% auto;
+            display: block; } }
+      main section .process .graphic .demolition {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 5;
+        list-style: none;
+        margin: 1%;
+        font-weight: 700;
+        border: 20px solid #004986;
+        display: inline-block; }
+        @media (max-width: 575px) {
+          main section .process .graphic .demolition {
+            width: 150px;
+            height: 150px;
+            font-size: 22px;
+            margin: 5% auto;
+            display: block; } }
+      main section .process .graphic .complete {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 5;
+        list-style: none;
+        margin: 1%;
+        font-weight: 700;
+        border: 20px solid #002e73;
+        display: inline-block; }
+        @media (max-width: 575px) {
+          main section .process .graphic .complete {
+            width: 150px;
+            height: 150px;
+            font-size: 22px;
+            margin: auto;
+            display: block; } }
+    main section .process p {
+      margin-left: -15px;
+      padding-top: 5%;
+      font-weight: 700;
+      font-size: 18px; }

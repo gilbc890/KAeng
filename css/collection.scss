@@ -47,7 +47,6 @@ main{
             }
             .intro{
                 @include display;
-                padding:5%;
                 @include media("(min-width:576px)"){
                 padding:0%;
                 }
@@ -63,10 +62,10 @@ main{
                 font-size:20px;
             }
             @include media("(min-width:576px)"){
-            padding:0;
+                padding:0;
             }
             @include media("(max-width:575px)"){
-            padding:0%;
+                padding:0%;
             }
         }
     }
@@ -85,34 +84,34 @@ main{
             border:2px solid #eee;
         }
         .img{
-            height:200px;
-            background-image: url(../img/company_img.jpg);
-            background-repeat:no-repeat;
-            background-position:center;
+            img{
+                width:100%;
+            }
         }
         .main_text{
             h2{
                 padding:5% 0;
+                font-weight: 800;
                 @include media("(max-width:575px)"){
                     font-size:20px;
                 }
+                strong{
+                    color:$main_color;
+                }
             }
             p{
-                font-size:20px;
-                font-weight:700;
+                font-weight: 700;
+                font-size:18px;
                 @include media("(max-width:575px)"){
                     font-size:14px;
                 }
             }
-        }
-        .bye{
-            text-align: right;
-            padding:5%;
-            img{
-                @include display;
-            }
-            p{
-                @include display;
+            .text_end{
+                font-size: 20px;
+                font-weight: 800;
+                &:nth-last-child(2){
+                    margin-top:10%;
+                }
             }
         }
     }

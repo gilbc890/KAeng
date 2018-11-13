@@ -41,16 +41,19 @@ main {
     border: 2px solid #eee; }
   main section .img {
     height: 200px;
-    background-image: url(../img/company_img.jpg);
+    background-image: url(../img/waste.jpg);
     background-repeat: no-repeat;
     background-position: center; }
   main section .main_text h2 {
-    padding: 5% 0; }
+    padding: 5% 0;
+    font-weight: 800; }
     @media (max-width: 575px) {
       main section .main_text h2 {
         font-size: 20px; } }
+    main section .main_text h2 strong {
+      color: #0068b7; }
   main section .main_text p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700; }
     @media (max-width: 575px) {
       main section .main_text p {

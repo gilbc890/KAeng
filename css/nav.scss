@@ -8,6 +8,9 @@
 @mixin line{
     text-decoration: none;
 }
+@mixin display{
+    display: inline-block;
+}
 /* Media */
 @mixin media($queryString){
     @media #{$queryString}{
@@ -24,7 +27,7 @@
     padding:1% 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     .nav_logo{
-        display: inline-block;
+        @include display;    
         a {    
             img{
                 width:50px;
@@ -35,7 +38,7 @@
                 }
             }
             h1{
-                display:inline-block;
+                @include display;    
                 font-size:2em;
                 @include gap;
                 color:black;
@@ -57,11 +60,11 @@
         cursor:pointer;
         display: none;
         @include media("(max-width:575px)"){
-            display:inline-block;
+            @include display;    
         }
     }
     .nav_list{
-        display: inline-block;
+        @include display;    
         float:right;
         @include gap;
         font-weight:600;

@@ -14,8 +14,7 @@ main {
       background-color: #0068b7;
       margin-right: 5%; }
     main aside .wrap .intro {
-      display: inline-block;
-      padding: 5%; }
+      display: inline-block; }
       @media (min-width: 576px) {
         main aside .wrap .intro {
           padding: 0%; } }
@@ -39,26 +38,24 @@ main {
     padding: 25px 5% 1px 0; }
   main section hr {
     border: 2px solid #eee; }
-  main section .img {
-    height: 200px;
-    background-image: url(../img/company_img.jpg);
-    background-repeat: no-repeat;
-    background-position: center; }
+  main section .img img {
+    width: 100%; }
   main section .main_text h2 {
-    padding: 5% 0; }
+    padding: 5% 0;
+    font-weight: 800; }
     @media (max-width: 575px) {
       main section .main_text h2 {
         font-size: 20px; } }
+    main section .main_text h2 strong {
+      color: #0068b7; }
   main section .main_text p {
-    font-size: 20px;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 18px; }
     @media (max-width: 575px) {
       main section .main_text p {
         font-size: 14px; } }
-  main section .bye {
-    text-align: right;
-    padding: 5%; }
-    main section .bye img {
-      display: inline-block; }
-    main section .bye p {
-      display: inline-block; }
+  main section .main_text .text_end {
+    font-size: 20px;
+    font-weight: 800; }
+    main section .main_text .text_end:nth-last-child(2) {
+      margin-top: 10%; }

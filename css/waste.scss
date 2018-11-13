@@ -63,10 +63,10 @@ main{
                 font-size:20px;
             }
             @include media("(min-width:576px)"){
-            padding:0;
+                padding:0;
             }
             @include media("(max-width:575px)"){
-            padding:0%;
+                padding:0%;
             }
         }
     }
@@ -86,19 +86,23 @@ main{
         }
         .img{
             height:200px;
-            background-image: url(../img/company_img.jpg);
+            background-image: url(../img/waste.jpg);
             background-repeat:no-repeat;
             background-position:center;
         }
         .main_text{
             h2{
                 padding:5% 0;
+                font-weight: 800;
                 @include media("(max-width:575px)"){
                     font-size:20px;
                 }
+                strong{
+                    color:$main_color;
+                }
             }
             p{
-                font-size:20px;
+                font-size:18px;
                 font-weight:700;
                 @include media("(max-width:575px)"){
                     font-size:14px;
